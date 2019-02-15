@@ -1,0 +1,13 @@
+<section class="pv5 ph5">
+    <div class="mw9 center" style="display: flex;{{ if .Get `reverse` }}flex-direction:row-reverse;{{ end }}">
+        <div style="width: 100%; height: 300px;">
+            <img src="{{ .Get `img` }}"/>
+        </div>
+        <div class="pv3 ph5" style="width: 100%;">
+            <h1>{{ .Get `title`}}</h1>
+            <p class="lh-copy measure">
+                {{ .Inner }}
+            </p>
+        </div>
+    </div>
+</section>
